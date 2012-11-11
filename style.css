@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700italic,700);
+
+body {
+    background: url(imgs/graynoise.png);
+}
+
+#content {
+    position: relative;
+    top: 0px;
+}
+
+#header {
+    z-index: 10;
+    position: relative;
+    margin: -8px -8px 40px;
+    padding: 10px 20px 20px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+
+    color: #9AA2D6;
+    text-shadow: 0 -1px 0 black, 0 1px 0 white;
+
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top, #6D78D6 0%, #032052 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #6D78D6 0%, #032052 100%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #6D78D6 0%, #032052 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6D78D6), color-stop(1, #032052));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #6D78D6 0%, #032052 100%);
+
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom, #6D78D6 0%, #032052 100%);
+
+    box-shadow: inset 0 -4px 10px -4px white, 0 10px 50px  black;
+    -o-box-shadow: inset 0 -4px 10px -4px white, 0 10px 50px 0 black;
+    -moz-box-shadow: inset 0 -4px 10px -4px white, 0 10px 50px 0 black;
+    -webkit-box-shadow: inset 0 -4px 10px -4px white, 0 10px 50px 0 black;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #AAB1F0;
+}
+
+div.info {
+    background: rgba(0,0,0,.5);
+    width: 550px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: #DDD;
+    font-size: 14px;
+
+    box-shadow: inset 0 5px 20px -10px black,
+                0 2px 5px 0 white;
+}
+
+div.info h1 {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    margin: 10px;
+    text-align: center;
+}
+
+div.info h2 {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+div.info a {
+    color: #BBB;
+    text-decoration: none;
+}
+
+div.info a:hover {
+    text-decoration: underline;
+}
+
+.largeButton:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,.3);
+}
+
+.largeButton:active {
+    margin-top: 25px;
+    margin-bottom: -5px;
+
+}
+
+#playerTable {
+    width: 100%;
+}
+
+#playerTable tr td {
+    width: 50%;
+    text-align: center;
+    color: #DDD;
+}
+
+.info input[type='text'] {
+    padding: 5px;
+    background: #444;
+    color: white;
+    border: 1px solid #222;
+    box-shadow: inset 0 2px 20px 0 black;
+    font-size: 14px;
+    text-align: center;
+}
+
+#playerTable input[type='text'] {
+    width: 90%;
+}
+
+#playerTable tr td input[type='text']:active {
+    border: 1px solid #200;
+}
+
+
+#victoryTable {
+    width: 100%;
+}
+
+#victoryTable tr td:nth-child(1),
+#victoryTable tr td:nth-child(2) {
+    width: 50%;
+}
+
+div.victory {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background: rgba(0,0,0,.3);
+    height: 100%;
+    margin: 0px;
+    border: 1px solid #AAA;
+    text-align: left;
+    padding: 10px;
+}
+
+div.victory:not(.selected):hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+div.victory.selected {
+    background: rgba(255, 255, 255, .1);
+    text-shadow: 0 1px 5px black;
+    box-shadow: inset 0 0px 50px -10px black;
+}
+
+div.victory .title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+div.victory .english {
+    text-align: center;
+    font-style: italic;
+    color: #BBB;
+}
+
+#fieldsTable {
+    color: #DDD;
+}
+
+#playButton {
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(0,0,0,.5);
+    margin: 20px 0px 10px;
+    border-radius: 10px;
+}
+
+
+#playButton:hover {
+    background: rgba(0,0,0,.8);
+}
+
+#playButton h1 {
+    font-size: 24px;
+    color: #DDD;
+    margin: 0px;
+    text-shadow: 0 1px 0 black;
+}
+
+#returnButton {
+    cursor: pointer;
+    width: 50px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: -5px;
+    z-index: 1;
+}
+
+#returnButton:hover {
+    background: rgba(0,0,0,.8);
+}
+
+#errors .error {
+    background: rgba(100, 0, 0, .8);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+#rithmomachy {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+#p1info {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#p2info {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.playerName {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#board {
+    box-shadow: 0 0 15px -2px black;
+}
+
+#board tr td {
+    width: 50px;
+    height: 50px;
+    box-shadow: inset -2px -2px 40px -3px rgba(0,0,0,.3),
+                inset 2px 2px 10px -3px rgba(255, 255, 255, .4);
+}
+
+#board tr:nth-child(2n) td:nth-child(2n),
+#board tr:nth-child(2n+1) td:nth-child(2n+1) {
+    background: #663300;
+}
+
+#board tr:nth-child(2n) td:nth-child(2n+1),
+#board tr:nth-child(2n+1) td:nth-child(2n) {
+    background: #EBC299; 
+}
+
+.smallButton {
+    cursor: pointer;
+    font-size: 14px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: -10px;
+    margin-right: 15px;
+    z-index: 1;
+    color: #DDD;
+}
+
+.smallButton:hover {
+    background: rgba(0,0,0,.8);
+}
+
+#toolbar {
+    width: 760px;
+    color: #DDD;
+}
+
+#toolbarTable {
+    color: #DDD;
+    font-size: 18px;
+}
+
+#fields {
+    margin-left: 20px;
+    font-size: 13px;
+    text-align: right;
+}
